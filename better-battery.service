@@ -1,0 +1,11 @@
+[Unit]
+Description=Battery notify (UPower listener)
+After=dbus.service
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/better-battery.sh --config %h/.config/better-battery.conf
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
