@@ -9,15 +9,15 @@ This repository contains a configurable Bash daemon that listens to UPower via D
 
 1. Clone this repository.
 2. Make the script executable `chmod +x better-battery`.
-3. Copy battery-notify.conf to ~/.config/better-battery to customize (optional).
+3. Copy better-battery.conf to ~/.config/better-battery to customize (optional).
 4. Install the systemd service (optional).
 
 
 ```sh
 mkdir -p ~/.config/systemd/user
-cp battery-notify.service ~/.config/systemd/user/
+cp better-battery.service ~/.config/systemd/user/
 systemctl --user daemon-reload
-systemctl --user enable --now battery-notify.service
+systemctl --user enable --now better-battery.service
 ```
 
 5. Check logs with `journalctl --user -u battery-notify.service -f` or run the script directly for debugging.
