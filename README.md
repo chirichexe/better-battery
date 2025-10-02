@@ -34,5 +34,5 @@ systemctl --user enable --now better-battery.service
 
 # LICENSE
 
-This project is MIT licensed. See the `LICENSE`.
+This project is MIT licensed. See the [`LICENSE`](https://choosealicense.com/licenses/mit/).
 
