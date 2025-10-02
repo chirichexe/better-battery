@@ -20,7 +20,7 @@ systemctl --user daemon-reload
 systemctl --user enable --now better-battery.service
 ```
 
-5. Check logs with `journalctl --user -u battery-notify.service -f` or run the script directly for debugging.
+5. Check logs with `journalctl --user -u better-battery.service -f` or run the script directly for debugging.
 
 6. Customize the configuration files as you prefer.
 7. Adjust `ExecStart` path to wherever you place the script (e.g. `~/.local/bin)` and the configuration file.
