@@ -196,10 +196,10 @@ prev_batt_level=-1
   if [[ "$line" == *"$AC_PATH"* ]]; then
     if [[ "$line" == *"Online': <true>"* ]] && [[ "$prev_ac_online" != "true" ]]; then
       prev_ac_online="true"
-      notify_and_play "$EMOJI_CHARGER Charger connected" "AC adapter connected" "$SOUND_AC_CONNECTED"
+      notify_and_play "$EMOJI_CHARGER Charger connected" "" "$SOUND_AC_CONNECTED"
     elif [[ "$line" == *"Online': <false>"* ]] && [[ "$prev_ac_online" != "false" ]]; then
       prev_ac_online="false"
-      notify_and_play "$EMOJI_CHARGER Charger disconnected" "AC adapter disconnected" "$SOUND_AC_DISCONNECTED"
+      notify_and_play "$EMOJI_CHARGER Charger disconnected" "" "$SOUND_AC_DISCONNECTED"
     fi
   fi
 
